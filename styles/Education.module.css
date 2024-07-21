@@ -1,0 +1,121 @@
+.section {
+  margin-bottom: 2rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate; /* Ensure table cells are separated */
+  border-spacing: 0; /* Remove default spacing */
+  border-radius: 8px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensure content does not overflow the rounded corners */
+}
+
+.th, .td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #060505;
+}
+
+.h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #d86830;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #d86830;
+  padding-bottom: 0.5rem;
+}
+
+.th {
+  background-color: #1f2937;
+  color: white;
+  font-weight: bold;
+}
+
+.tr {
+  background-color: #374151;
+  border-bottom: 1px solid #060505;
+}
+
+.tr:hover {
+  background-color: #63584b;
+}
+
+.td {
+  color: #fbbf24;
+}
+
+
+.skillsCategoryTitle {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fbbf24;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem; /* 3 */
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #1f2937;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skillsItem {
+  background-color: #374151;
+  color: #fbbf24;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem; /* Fully rounded */
+  font-size: 0.875rem; /* Sm */
+  font-weight: 500; /* Medium */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.achievementsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.achievementItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.achievementBackground {
+  position: relative;
+}
+
+.achievementImage {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievementText {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.certificationImage {
+  width: 200px; 
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
