@@ -2,20 +2,6 @@
   margin-bottom: 2rem;
 }
 
-.table {
-  width: 100%;
-  border-collapse: separate; /* Ensure table cells are separated */
-  border-spacing: 0; /* Remove default spacing */
-  border-radius: 8px; /* Rounded corners for the table */
-  overflow: hidden; /* Ensure content does not overflow the rounded corners */
-}
-
-.th, .td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 1px solid #060505;
-}
-
 .h2 {
   font-size: 1.25rem;
   font-weight: 700;
@@ -27,25 +13,46 @@
   padding-bottom: 0.5rem;
 }
 
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.th, .td {
+  padding: 1rem;
+  border-bottom: 1px solid #060505;
+  text-align: left;
+  box-sizing: border-box; 
+}
+
 .th {
   background-color: #1f2937;
   color: white;
   font-weight: bold;
 }
 
-.tr {
-  background-color: #374151;
-  border-bottom: 1px solid #060505;
-}
-
-.tr:hover {
-  background-color: #63584b;
-}
-
 .td {
+  background-color: #374151;
   color: #fbbf24;
 }
 
+.tr:hover .td {
+  background-color: #63584b;
+}
+
+.th, .td {
+  width: 20%; 
+}
+
+@media (max-width: 768px) {
+  .th, .td {
+    font-size: 0.875rem;
+  }
+}
 
 .skillsCategoryTitle {
   display: block;
@@ -149,9 +156,28 @@
   background-color: #e0e0e0;
   border-radius: 5px;
   padding: 0.25rem 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.25rem;
   font-size: 0.9rem;
   background-color: #374151;
   color: #fbbf24;
   padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tabs-container {
+  padding: 1rem;
+}
+.tab-item {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.tab-item.active {
+  background-color: #4a90e2;
+  color: #fff;
+}
+.tab-content {
+  padding: 1rem;
+  border: 1px solid #ddd;
 }

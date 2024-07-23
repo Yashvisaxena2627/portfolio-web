@@ -16,6 +16,25 @@
   }
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .nav ul {
+    flex-direction: column;
+  }
+
+  .nav li {
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,3 +45,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.hidden md:flex md:items-center md:space-x-8 {
+  flex-wrap: wrap; 
+}
