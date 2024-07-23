@@ -119,3 +119,39 @@
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
+.experienceList {
+  display: flex;
+  flex-direction: column;
+}
+.experienceItem {
+  margin-bottom: 2rem;
+}
+.jobTitle{
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fbbf24;
+}
+.duration {
+  font-style: italic;
+}
+.description {
+  margin-top: 0.5rem;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.technologies {
+  margin-top: 0.5rem;
+}
+.tech {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #374151;
+  color: #fbbf24;
+  padding: 0.5rem 1rem;
+}

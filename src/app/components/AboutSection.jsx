@@ -27,6 +27,31 @@ const education = [
   },
 ];
 
+const experience = [
+  {
+    jobTitle: 'Data Intern',
+    company: 'PGP Glass Pvt Ltd',
+    location: 'Vadodara, Gujarat',
+    duration: 'June 2024 - July 2024',
+    description: [
+      'Learnt Data Fundamentals like data analysis, visualisation, cleaning and AI modeling.',
+      'Built a project with Microsoft Azure and Power BI.',
+    ],
+    technologies: ['Azure', 'Power BI', 'SQL', 'Machine Learning'],
+  },
+  {
+    jobTitle: 'General Secretary',
+    company: 'IEEE Computer Society VIT Chennai Student Chapter',
+    location: 'Chennai, Tamil Nadu',
+    duration: 'Dec 2022 - Present',
+    description: [
+      'Organised a Competitive Coding event with 400+ college student participants called BitWars Algorithm ShowDown as the Student Coordinator.',
+      'Managing and Ensuring the smooth running of a club with 125+ members.',
+    ],
+    technologies: ['Leadership', 'Communication', 'Event and Time Management', 'Teamwork'],
+  },
+];
+
 const AboutSection = () => {
   const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
@@ -54,6 +79,9 @@ const AboutSection = () => {
             </TabButton>
             <TabButton id="certifications" activeTab={tab} onClick={handleTabChange}>
               Certifications
+            </TabButton>
+            <TabButton id="experience" activeTab={tab} onClick={handleTabChange}>
+              Experience
             </TabButton>
           </div>
           
@@ -158,7 +186,7 @@ const AboutSection = () => {
 
           {tab === "certifications" && (
             <section className={styles.section}>
-              <h2 className={styles.h2}>Certifications 📚</h2>
+              <h2 className={styles.h2}>Certifications 📜</h2>
               <div className={styles.achievementsList}>
                 <div className={`${styles.achievementItem} ${styles.achievementBackground}`}>
                   <div className={styles.certificationImage} style={{ backgroundImage: "url('/images/azure-ai-fundamentals.png')" }} />
@@ -170,6 +198,31 @@ const AboutSection = () => {
                   <a href="https://credentials.databricks.com/1f17decf-a94f-49d0-9b35-576ea6a1bbe3"><h3 className={styles.skillsCategoryTitle}>Databricks Accredited LakeHouse Fundamentals</h3></a>
                   <p className={styles.achievementText}>Understanding of fundamental concepts related to Databricks Lakehouse Platform.</p>
                 </div>
+              </div>
+            </section>
+          )}
+
+          {tab === "experience" && (
+            <section className={styles.section}>
+              <h2 className={styles.h2}>Experience 💼</h2>
+              <div className={styles.experienceList}>
+                {experience.map((exp, index) => (
+                  <div key={index} className={styles.experienceItem}>
+                    <h3 className={styles.jobTitle}>{exp.jobTitle} @ {exp.company}</h3>
+                    <p className={styles.duration}>{exp.location}</p>
+                    <p className={styles.duration}>{exp.duration}</p>
+                    <ul className={styles.description}>
+                      {exp.description.map((desc, i) => (
+                        <li key={i}>{desc}</li>
+                      ))}
+                    </ul>
+                    <div className={styles.technologies}>
+                      {exp.technologies.map((tech, i) => (
+                        <span key={i} className={styles.tech}>{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
             </section>
           )}
