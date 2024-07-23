@@ -36,7 +36,7 @@ const HeroSection = () => {
               <Image src="/images/github.svg" alt="Github Icon" width={30} height={30} />
             </Link>
             <Link
-              href="/images/cv.pdf" download="cv"
+              href="https://drive.google.com/file/d/1M2yK4iOErwrBXoV6cAi9GQo_xBzFPt5E/view?usp=drivesdk" download="cv"
               className="px-1 py-1 w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
