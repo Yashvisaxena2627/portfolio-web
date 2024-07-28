@@ -2,17 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255; /* Text color for dark mode */
+    --background-start-rgb: 0, 0, 0; /* Black background for dark mode */
+    --background-end-rgb: 0, 0, 0; /* Black background for dark mode */
   }
 }
 
@@ -36,15 +31,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: white;/* Solid white background for light mode */
 }
 
-.hidden md:flex md:items-center md:space-x-8 {
-  flex-wrap: wrap; 
+/* Tailwind CSS classes should be applied directly in HTML or JSX */
+.hidden.md\:flex.md\:items-center.md\:space-x-8 {
+  flex-wrap: wrap;
 }

@@ -16,7 +16,7 @@ const HeroSection = () => {
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Hallo, I am Anvesha
+              Hello, I am Yashvi
             </span>
           </h1>
           <p className="text-orange-500 text-base sm:text-lg mb-6 lg:text-xl">
@@ -24,19 +24,19 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap justify-center sm:justify-start space-x-4">
             <Link
-              href="https://www.linkedin.com/in/anvesha-singh-330ba9260/"
+              href="https://www.linkedin.com/in/yashvi-saxena-4960632a7/"
               className="px-3 py-3 w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               <Image src="/images/linkedin.svg" alt="Linkedin Icon" width={30} height={30} />
             </Link>
             <Link
-              href="https://github.com/Anvesha-Singh"
+              href="https://github.com/Yashvisaxena2627/resumeyashvi"
               className="px-3 py-3 w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               <Image src="/images/github.svg" alt="Github Icon" width={30} height={30} />
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1M2yK4iOErwrBXoV6cAi9GQo_xBzFPt5E/view?usp=drivesdk" download="cv"
+              href="CV.pdf" download="cv"
               className="px-1 py-1 w-auto rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-3">
@@ -53,7 +53,7 @@ const HeroSection = () => {
         >
           <div className="relative w-[250px] h-[250px] lg:w-[400px] lg:h-[400px]">
             <Image
-              src="/images/pfp.jpg"
+              src="/images/pfp.jpeg"
               alt="Profile picture"
               className="rounded-full"
               layout="fill"
